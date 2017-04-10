@@ -45,7 +45,7 @@
 ;;; Версия с cond будет работать
 (define (sqrt-iter-cond guess x)
 	(cond ((good-enough? guess x) guess)
-		(else (sqrt-iter-v2 (improve guess x)
+		(else (sqrt-iter-cond (improve guess x)
 			x))))
 			
 (define (sqrt-cond x)
